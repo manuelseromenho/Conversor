@@ -1,15 +1,10 @@
 #include <stdio.h>
 
-int main(){
-int op;
+int converte(int op)
+{
 float x;
 
-    printf("converter");
-    printf("\n(1) Unidades metrica");
-    printf("\n(2) Unidades volumetrica\n");
-    scanf("%d",&op);
-
-    switch(op)
+switch(op)
     {
         case 1:
             printf("\n(1) m->km");
@@ -51,3 +46,21 @@ float x;
                 printf("\nOpcao incorreta");
     }
 }
+
+
+int main(){
+int op;
+
+
+    printf("converter");
+    printf("\n(1) Unidades metrica");
+    printf("\n(2) Unidades volumetrica\n");
+    scanf("%d",&op);
+
+    converte(op);
+
+}
+
+
+
+
